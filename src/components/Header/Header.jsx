@@ -1,7 +1,7 @@
-import "./Header.css";
+import "./header.module.css";
 
 function Header() {
-  return <div className="Header"></div>;
+  return <div className="header"></div>;
 }
 
 export default Header;
