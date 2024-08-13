@@ -1,15 +1,15 @@
-import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import React from "react";
+import Header from "./components/Header/Header";
+import CardList from "./components/CardList/CardList";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
     <React.Fragment>
-      <div className="app-container">
-        <Header />
-        <Footer />
-      </div>
+      <Header />
+      <CardList />
+      <Footer />
     </React.Fragment>
   );
 }

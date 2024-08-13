@@ -1,18 +1,25 @@
 import React from "react";
-import "./card.module.css";
-import CardContents from "../CardContents/CardContents";
-import CardButtons from "../CardButtons/CardButtons";
+import styles from "./card.module.css";
+import Element from "../Element/Element";
+import EditButton from "../EditButton/EditButon";
+import DeleteButton from "../DeleteButton/DeleteButton";
 
-function Card() {
+function Card(props) {
+  const { word, translation, partOfSpeech } = props;
   return (
     <React.Fragment>
-      <div className="card">
-        <CardContents
-          word="das Beispiel"
-          translation="перевод, образец"
-          partOfSpeech="noun"
-        />
-        <CardButtons />
+      <div className={styles.card}>
+        <div className={styles.cardContents}>
+          <div className="word">{word}</div>
+          <Element />
+          <div className="translation">{translation}</div>
+          <Element />
+          <div className="partOfSpeech">{partOfSpeech}</div>
+        </div>
+        <div className={styles.cardButtons}>
+          <EditButton />
+          <DeleteButton />
+        </div>
       </div>
     </React.Fragment>
   );

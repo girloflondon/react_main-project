@@ -1,5 +1,19 @@
 .header {
   height: 80px;
-  width: 100vw;
+  padding: 10px 5vw;
+  display: grid;
+  align-content: center;
   background-color: #ffe633;
+}
+
+.title {
+  width: 20vw;
+  padding: 15px 20px;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #322d2d;
+  border: 1.5px solid #322d2d;
 }

@@ -1,0 +1,6 @@
+.cardlist {
+  margin: 0 auto;
+  padding: 5vh 20vw;
+  display: grid;
+  grid-gap: 10px;
+}
