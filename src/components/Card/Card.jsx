@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./card.module.css";
-import Element from "../Element/Element";
 import EditButton from "../EditButton/EditButon";
 import DeleteButton from "../DeleteButton/DeleteButton";
+import RevealButton from "../RevealButton/RevealButton";
 
 function Card(props) {
   const { word, translation, partOfSpeech } = props;
@@ -10,15 +10,12 @@ function Card(props) {
     <React.Fragment>
       <div className={styles.card}>
         <div className={styles.cardContents}>
-          <div className="word">{word}</div>
-          <Element />
-          <div className="translation">{translation}</div>
-          <Element />
+          <div className={styles.word}>{word}</div>
+          <div className={styles.translation}>{translation}</div>
           <div className="partOfSpeech">{partOfSpeech}</div>
         </div>
         <div className={styles.cardButtons}>
-          <EditButton />
-          <DeleteButton />
+          <RevealButton />
         </div>
       </div>
     </React.Fragment>

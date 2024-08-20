@@ -1,0 +1,19 @@
+.card {
+  height: 400px;
+  width: 200px;
+  padding: 10px 40px;
+  display: grid;
+  grid-template: 75% auto / 1fr;
+  grid-gap: 10%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  /*border: 1px solid #322d2d;*/
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 1px #e4e5e7;
+  color: white;
+  background-color: #00c44a;
+  /*color: #378733;*/
+  transition: 0.1s;
+}

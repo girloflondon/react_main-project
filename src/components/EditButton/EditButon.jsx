@@ -1,7 +1,7 @@
 import styles from "./editButton.module.css";
 
 function EditButton() {
-  return <div className={styles.editButton}></div>;
+  return <button className={styles.editButton}></button>;
 }
 
 export default EditButton;

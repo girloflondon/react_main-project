@@ -1,5 +1,8 @@
 .editButton {
-  height: 30px;
-  width: 30px;
-  background-color: blueviolet;
+  height: 15px;
+  width: 15px;
+  border: none;
+  background-image: url("../../icons/edit.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
