@@ -3,14 +3,14 @@ const database = [
     id: "1",
     word: "das Beispiel",
     translation: "пример, образец",
-    partOfSpeech: "Noun",
+    partOfSpeech: "Substabtiv",
     gender: "neutral",
   },
   {
     id: "2",
     word: "der Auftrag",
     translation: "заказ, поручение",
-    partOfSpeech: "Noun",
+    partOfSpeech: "Substabtiv",
     gender: "masculin",
   },
   {
@@ -29,14 +29,14 @@ const database = [
     id: "5",
     word: "die Vermittlung",
     translation: "посредничество, содействие",
-    partOfSpeech: "Noun",
+    partOfSpeech: "Substabtiv",
     gender: "feminine",
   },
   {
     id: "6",
     word: "der Anlauf",
     translation: "попытка, разбег, начало работ",
-    partOfSpeech: "Noun",
+    partOfSpeech: "Substabtiv",
     gender: "masculin",
   },
   {
@@ -92,11 +92,9 @@ const database = [
     id: "15",
     word: "der Stammkunde",
     translation: "постоянный клиент",
-    partOfSpeech: "Noun",
+    partOfSpeech: "Substabtiv",
     gender: "masculin",
   },
 ];
 
 export default database;
-
-export const dataBtn = [];

@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./card.module.css";
-import EditButton from "../EditButton/EditButon";
-import DeleteButton from "../DeleteButton/DeleteButton";
-import RevealButton from "../RevealButton/RevealButton";
+//import RevealButton from "../RevealButton/RevealButton";
+//import ControlCard from "../ControlCard/ControlCard";
+//import Control from "../ControlCard/ControlCard";
 
 function Card(props) {
   const { word, translation, partOfSpeech } = props;
+
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
-    <React.Fragment>
-      <div className={styles.card}>
-        <div className={styles.cardContents}>
-          <div className={styles.word}>{word}</div>
-          <div className={styles.translation}>{translation}</div>
-          <div className="partOfSpeech">{partOfSpeech}</div>
+    <div className={styles.card}>
+      <div className={styles.cardContents}>
+        <div className={styles.word}>{word}</div>
+        <div
+          className={`${!isVisible ? styles.translation : styles.invisible}`}
+        >
+          {translation}
         </div>
-        <div className={styles.cardButtons}>
-          <RevealButton />
+        <div
+          className={`${!isVisible ? styles.partOfSpeech : styles.invisible}`}
+        >
+          {partOfSpeech}
         </div>
       </div>
-    </React.Fragment>
+      <div className={styles.cardButtons}>
+        {!isVisible && (
+          <button
+            onClick={() => setIsVisible(!isVisible)}
+            className={styles.revealButton}
+          >
+            ПРОВЕРИТЬ
+          </button>
+        )}
+      </div>
+    </div>
   );
 }
 

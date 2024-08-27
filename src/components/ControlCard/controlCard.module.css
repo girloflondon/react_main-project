@@ -1,0 +1,6 @@
+.controlCard {
+  display: grid;
+  grid-template: 1fr / repeat(2, auto);
+  gap: 30px;
+  justify-content: center;
+}
