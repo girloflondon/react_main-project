@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import styles from "./card.module.css";
-//import RevealButton from "../RevealButton/RevealButton";
-//import ControlCard from "../ControlCard/ControlCard";
-//import Control from "../ControlCard/ControlCard";
 
 function Card(props) {
   const { word, translation, partOfSpeech } = props;

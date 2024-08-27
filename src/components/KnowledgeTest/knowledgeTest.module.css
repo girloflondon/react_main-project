@@ -1,0 +1,17 @@
+.container {
+  padding: 5vh 10vw;
+  display: grid;
+  grid-template: 1fr / repeat(3, auto);
+  gap: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttonBack,
+.buttonForward {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #322d2d;
+  border-radius: 50%;
+  background-color: none;
+}
