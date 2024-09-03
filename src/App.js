@@ -1,18 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-//import CardList from "./components/CardList/CardList";
+import Main from "./components/Main/Main";
+import CardList from "./components/CardList/CardList";
+import KnowledgeTest from "./components/KnowledgeTest/KnowledgeTest";
+import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
-import KnowledgeTest from "../src/components/KnowledgeTest/KnowledgeTest";
-import "./App.css";
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <Header />
-      <KnowledgeTest />
-      {/*<CardList />*/}
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/cards" element={<CardList />} />
+        <Route path="/test" element={<KnowledgeTest />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
-    </React.Fragment>
+    </Router>
   );
 }
 

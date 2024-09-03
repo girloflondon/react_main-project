@@ -1,0 +1,9 @@
+.message {
+  padding: 10vh 10vw;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 3.7rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #322d2d;
+}

@@ -8,7 +8,7 @@ import AddButton from "../AddButton/AddButton";
 //import Neutral from "./Themes/theme-neutral.module.css";
 //import Phrase from "./Themes/theme-phrase.module.css";
 
-function Cardlist() {
+export default function Cardlist() {
   return (
     <React.Fragment>
       <div className={styles.cardlist}>
@@ -20,5 +20,3 @@ function Cardlist() {
     </React.Fragment>
   );
 }
-
-export default Cardlist;
