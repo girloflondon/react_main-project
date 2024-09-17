@@ -17,7 +17,9 @@ export default function CardList() {
 
   return (
     <React.Fragment>
-      <div className={styles.counter}>Изучено слов: {wordsLearned}</div>
+      <div className={styles.counter}>
+        Изучено слов: {wordsLearned} из {database.length}
+      </div>
       <div className={styles.cardlist}>
         <AddButton />
         {database.map((item) => {
