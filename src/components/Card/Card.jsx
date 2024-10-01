@@ -4,10 +4,9 @@ import styles from "./card.module.css";
 function Card(props) {
   const { word, translation, partOfSpeech, onWordLearned } = props;
   const [isVisible, setIsVisible] = useState(false);
-  const buttonRef = useRef(null); // Создаём ссылку на кнопку
+  const buttonRef = useRef(null);
 
   useEffect(() => {
-    // Устанавливаем фокус на кнопку при рендере
     if (buttonRef.current) {
       buttonRef.current.focus();
     }
@@ -15,7 +14,7 @@ function Card(props) {
 
   const handleRevealClick = () => {
     setIsVisible(true);
-    onWordLearned(); // Увеличиваем счетчик при нажатии на кнопку
+    onWordLearned();
   };
 
   return (
@@ -36,7 +35,7 @@ function Card(props) {
       <div className={styles.cardButtons}>
         {!isVisible && (
           <button
-            ref={buttonRef} // Привязываем кнопку к ссылке
+            ref={buttonRef}
             onClick={handleRevealClick}
             className={styles.revealButton}
           >
