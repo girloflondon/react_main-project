@@ -32,7 +32,7 @@ export default function CardList() {
       </div>
       <div className={styles.cardlist}>
         <AddButton />
-        {database.map((item) => {
+        {words.map((item) => {
           return (
             <Card key={item.id} {...item} onWordLearned={handleWordLearned} />
           );
